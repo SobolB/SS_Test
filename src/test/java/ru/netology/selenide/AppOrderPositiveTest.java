@@ -43,6 +43,6 @@ public class AppOrderPositiveTest {
         driver.findElement(By.cssSelector(" [data-test-id=agreement]")).click();
         driver.findElement(By.cssSelector("button.button")).click();
         var actualText = driver.findElement(By.cssSelector(" [data-test-id=order-success]")).getText().trim();
-        assertEquals("Ваша злявка успешно отправлена! наш менеджер свяжется с вами в бликайшее время. ", actualText);
+        assertEquals("Ваша заявка успешно отправлена! наш менеджер свяжется с вами в бликайшее время. ", actualText);
     }
 }
